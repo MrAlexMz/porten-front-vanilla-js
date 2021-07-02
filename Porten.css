@@ -1,0 +1,991 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('assets/fonts/style.css');
+
+/* Header */
+
+.header-info-wrapper {
+    display: flex;
+    align-items: center;
+    background: #000000;
+    width: 100%;
+    height: 44px;
+}
+
+.header-info-wrapper img {
+    margin-left: 21%;
+    margin-right: 10px;
+}
+
+.header-info {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #969696;
+}
+
+.header-info-separator {
+    display: flex;
+    flex-shrink: 0;
+    background: #969696;
+    width: 1px;
+    height: 14px;
+    margin: 10px;
+}
+
+.login {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #969696;
+    margin-right: 21%;
+}
+
+@media screen and (max-width: 900px) {
+
+    .header-info-wrapper img {
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+
+    .header-info-wrapper {
+        height: 64px;
+    }
+
+    .login {
+        margin-right: 10px;
+    }
+
+}    
+
+@media screen and (max-width: 420px) {
+
+    .header-info-wrapper img {
+        margin: 5px;
+    }
+
+    .login {
+        margin: 5px;
+    }
+
+    .header-info-separator {
+        margin: 5px;
+    }
+
+}
+
+/* Navigation bar */
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background: #0F0F0F;
+}
+
+.nav-company-name {
+    font-family: 'Post No Bills Jaffna Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    color: #FFFFFF;
+    margin-left: 21%;
+    margin-right: 24%;
+}
+
+.nav-menu {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 5px;
+    box-sizing: content-box;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+    height: 100%;
+    width: 7%;
+}
+
+.nav-menu:hover {
+    background: #1F1F1F;
+}
+
+.nav-wrapper img {
+    height: 22px;
+    width: 22px;
+    margin: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .nav-company-name {
+        margin-right: 10% ;
+    }
+
+}  
+
+@media  screen and (max-width: 740px) {
+
+    .nav-company-name {
+        margin-right: 42%;
+        margin-left: 42%;
+    }
+
+    .nav-menu {
+        font-size: 12px;
+        margin: 10px;
+        padding: 20px 30px;
+    }
+
+    .nav-wrapper img {
+        margin: 10px;
+    }
+
+    .nav-wrapper {
+        height: unset;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+/* company-info-section */
+
+.company-info-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 810px;
+    background-image: url(assets/background-pictures/Rectangle\ 3.png);
+    background-repeat: no-repeat;
+}
+
+.company-info-section-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid #FFFFFF;
+    width: 320px;
+    height: 320px;
+    margin-top: 19,5%;
+    margin-left: 41%;
+    margin-right: 41%;
+}
+
+.company-info-section-company-name {
+    font-family: 'Post No Bills Jaffna Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 96px;
+    color: #FFFFFF;
+}
+
+.company-info-section-box-separator {
+    border: 1px solid #FFFFFF;
+    width: 179px;
+}
+
+.company-info-section-city {
+    width: 200px;
+    height: 28px;
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.company-info-section-text-under-box {
+    width: 730px;
+    height: 96px;
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 80px;
+}
+
+@media screen and (max-width: 790px ) {
+
+    .company-info-section-text-under-box {
+        width: unset    ;
+        height: 96px;
+    }
+
+    .company-info-section-box {
+        width: 280px;
+        height: 280px;
+    }
+
+}
+    
+
+/* new-collection-section */
+
+.new-collection-section-wrapper {
+    display: flex;
+}
+
+.new-collection-section-left-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    width: 55%;
+    height: 730px;  
+}
+
+.season {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.new-collection-section-left-separator {
+    border: 1px solid #FFFFFF;
+    margin: 50px;
+    width: 100px;
+}
+
+.product-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.new-collection-section-wrapper .product {
+    width: 18%;
+    margin: 10px 50px;
+}
+
+.new-collection-section-left-wrapper .product img {
+    height: 214px;
+    width: 215px;
+    background: #191B1C;
+    padding: 55px 22px;
+}
+
+.product-description1 {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-top: 25px;
+}
+
+.price1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: #D0D0D0;
+    margin-top: 10px;
+}
+
+.new-collection-section-right-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(assets/background-pictures/Rectangle\ 8.jpg);
+    background-repeat: no-repeat;
+    width: 45%;
+    height: 730px;
+}
+
+.new-collection {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 484px;
+}
+
+.new-collection-section-right-separator {
+    border: 1px solid #FFFFFF;
+    margin: 30px;
+    width: 100px;
+}
+
+.catalogue-button {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: solid #FFFFFF;
+}
+
+@media screen and (max-width: 1700px) {
+
+    .new-collection-section-left-wrapper .product img {
+        height: 150px;
+        width: 150px;
+        padding: 35px 12px;
+    }
+
+}
+
+@media screen and (max-width: 1350px) {
+
+    .new-collection-section-left-wrapper .product img {
+        height: 80px;
+        width: 80px;
+        padding: 15px 2px;
+    }
+
+    .product-description1 {
+        font-size: 12px;
+    }
+    
+    .price1 {
+        font-size: 10px;
+    }
+
+}  
+
+@media screen and (max-width: 920px) {
+
+    .new-collection-section-left-wrapper .product img {
+        height: 150px;
+        width: 150px;
+        padding: 35px 12px;
+    }
+
+    .product-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 15%;
+    }
+
+    .product-description1 {
+        font-size: 16px;
+    }
+    
+    .price1 {
+        font-size: 14px;
+    }
+    
+    .new-collection-section-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .new-collection-section-left-wrapper {
+        width: 100%;
+        height: 1400px;
+    }
+
+    .new-collection-section-right-wrapper {
+        width: 100%;
+        background-color: #000000;
+    }
+
+}  
+
+@media screen and (max-width: 500px) {
+
+    .product-wrapper {
+        margin-right: 30%;
+    }
+
+}
+ 
+/* old-collection-section */
+
+.old-collection-section-wrapper {
+    display: flex;
+}
+
+.old-collection-section-picture {
+    background-image: url(assets/background-pictures/Rectangle\ 9.png);
+    background-repeat: no-repeat;
+    width: 45%;
+    height: 600px;
+}
+
+.old-collection-section-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    width: 55%;
+    height: 600px;
+}
+
+.collection2018 {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.old-collection-section-separator {
+    border: 1px solid #FFFFFF;
+    margin: 40px;
+    width: 100px;
+}
+
+.collection-info {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+    box-sizing: content-box;
+    width: 43%;
+    height: 173px;
+}
+
+.view-collection-button {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 12px 28px;
+    border: solid #FFFFFF;
+    margin-top: 73px;
+}
+
+@media screen and (max-width: 1455px) {
+
+    .collection-info {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 1095px) {
+
+    .collection-info {
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width: 920px) {
+
+    .old-collection-section-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .old-collection-section-picture {
+        width: 100%;
+    }
+
+    .old-collection-section-info {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 470px) {
+
+    .collection-info {
+        width: 60%;
+    }
+
+    .view-collection-button {
+        font-size: 16px;
+        padding: 8px 24px;
+    }
+
+}
+
+/* new-product-section */
+
+.new-product-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1289px;
+    background: #000000;
+}
+
+.new-product {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 120px;
+}
+
+.new-product-section-separator {
+    border: 1px solid #FFFFFF;
+    margin: 40px;
+    width: 100px;
+}
+
+.new-product-section-product-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-product-section-wrapper .product {
+    width: 18%;
+    margin: 40px 23px;
+}
+
+.new-product-section-wrapper .product img {
+    height: 214px;
+    width: 215px;
+    background: #191B1C;
+    padding: 55px 22px;
+}
+
+.price2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: #D0D0D0;
+    margin-top: 10px;
+}
+
+.product-description2 {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 1300px) {
+
+    .new-product-section-wrapper .product img {
+        height: 150px;
+        width: 150px;
+        background: #191B1C;
+        padding: 35px 12px;
+    }
+
+}
+
+@media screen and (max-width: 940px) {
+
+    .new-product-section-wrapper{
+        height: unset   ;
+    }
+
+    .new-product-section-wrapper .product img {
+        height: 100px;
+        width: 100px;
+        background: #191B1C;
+        padding: 35px 12px;
+    }
+
+    .price2 {
+        font-size: 12px;
+    }
+    
+    .product-description2 {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .new-product-section-wrapper .product {
+        width: unset;
+    }
+}
+
+/*our-brands-section*/
+
+.our-brands-section-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 362px;
+    background: #0F0F0F;
+}
+
+.our-brands {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 60px;
+}
+
+.our-brands-section-separator {
+    border: 1px solid #FFFFFF;
+    margin-top: 40px;
+    width: 100px;
+}
+
+.brands {
+    display: flex;
+    flex-direction: row;
+}
+
+.brands img {
+    margin-left: 30px;
+    width: 350px;
+    height: 150px;
+}
+
+@media screen and (max-width: 1600px) {
+
+    .brands {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .our-brands-section-wrapper {
+        height: unset;
+    }
+
+}    
+
+@media screen and (max-width: 1600px) {
+
+    .brands img {
+        margin-left: unset;
+        width: 300px;
+    }
+
+}
+
+/*additional-info-section*/
+
+.additional-info-section-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background-image: url(assets/background-pictures/Rectangle\ 15.jpg);
+    background-repeat: no-repeat;
+}
+
+.about-shop-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.about-shop-title, .categories-title, .mailing-title {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+
+.shop-info {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+    box-sizing: content-box;
+    height: 147px;
+    width: 350px;
+}
+
+.categories-block {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.categories-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.categories-first-row, .categories-second-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.category {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #D0D0D0;
+    box-sizing: content-box;
+    padding: 10px;
+    background: #0F0F0F;
+    margin: 20px;
+}
+
+.mailing-block {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    margin-left: 20px;
+}
+
+.mailing-info {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+    box-sizing: content-box;
+    width: 350px;
+    height: 42px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 45px;
+    margin-top: 20px;
+}
+
+.input-field input {
+    height: 42px;
+    width: 210px;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+input::placeholder {
+    color: #D0D0D0;
+}
+
+.subscribe-button {
+    display: flex;
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+    background: #0F0F0F;
+    height: 50px;
+    width: 140px;
+}
+
+@media screen and (max-width: 1300px) {
+
+    .about-shop-block {
+        margin-left: 10px;
+    }
+
+    .categories-title {
+        margin-bottom: 5px;
+    }
+
+    .category {
+        margin: 10px;
+    }
+
+}
+
+@media screen and (max-width: 1150px) {
+
+    .about-shop-block {
+        margin-bottom: 150px;
+    }
+
+    .mailing-block {
+        margin-bottom: 150px;
+    }
+
+    .mailing-title {
+        text-align: center;
+    }
+
+}    
+
+@media screen and (max-width: 960px) {
+
+    .additional-info-section-wrapper {
+        display: flex;
+        flex-direction: column;
+        background-image: unset;
+        height: unset;
+        background-color: #000000;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-shop-block {
+        margin: unset;
+    }
+
+    .mailing-block {
+        margin: unset;
+    }
+    
+    .categories-block {
+        margin: unset;
+    }
+
+    .categories-title {
+        text-align: center;
+        margin: 10px;
+    }
+
+}
+
+@media screen and (max-width: 410px) {
+
+    .shop-info {
+        width: unset;
+        margin: 5px;
+    }
+
+    .mailing-info {
+        width: unset;
+        margin: 5px;
+    }
+
+    .input-field input {
+        width: 150px ;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+
+    .subscribe-button {
+        width: 100px;
+        margin-top: 20px;
+    }
+
+}
+    
+/*Footer*/
+
+.footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: #0F0F0F;
+}
+
+.copyright {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #D0D0D0;
+    margin-left: 200px;
+}
+
+.figma {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    text-decoration-line: underline;
+    color: #D0D0D0;
+    margin-left: 1100px;
+}
+
+@media screen and (max-width: 1600px) {
+
+    .footer {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .figma {
+        margin-left: 0px;
+    }
+
+    .copyright {
+        margin: 0px;
+    }
+
+}
