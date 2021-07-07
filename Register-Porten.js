@@ -13,9 +13,6 @@ registerButton.addEventListener("click",
         let email = document.querySelector(".email-input-field input").value;
         let login = document.querySelector(".user-name-input-field input").value;
         let password = document.querySelector(".password-input-field input").value;
-        console.log(email);
-        console.log(login);
-        console.log(password);
 
         const newUser = {
             'email': email,
@@ -23,10 +20,24 @@ registerButton.addEventListener("click",
             'password': password
         };
 
-        console.log('new user is ' + JSON.stringify(newUser));
         const users = JSON.parse(localStorage.getItem("users"));
-        users.push(newUser);
-        console.log('users with appended new user ' + JSON.stringify(users));
+        for (let i=0; i<users.length; i++) {
+            if (users[i].email === newUser.email) {
+                document.querySelector(".error-wrong-email").hidden = false;
+                break;
+            }
+            else if (users[i].login === newUser.login) {
+                document.querySelector(".error-wrong-name").hidden = false;
+                document.querySelector(".error-wrong-email").hidden = true;
+                break;
+            }
+            else if (i=users.length-1) {
+                users.push(newUser);
+                window.location.replace("Your-Account.html");
+                break;
+            }
+        };
+      
         localStorage.setItem("users", JSON.stringify(users));
     }
 );

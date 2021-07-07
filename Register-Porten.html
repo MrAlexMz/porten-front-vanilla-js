@@ -19,21 +19,23 @@
         <div class="login-input-section">
             <div class="login-box">
                 <div class="login-box-main-title">Регистрация</div>
-                <form>
+                <div>
                     <div class="email-title">Email</div>
                     <div class="email-input-field">
                         <input type="email" size="40" required placeholder="   Email"> 
                     </div>
+                    <div class="error-wrong-email" hidden>Пользователь с таким email уже зарегистрирован</div>
                     <div class="user-name-title">Имя пользователя</div>
                     <div class="user-name-input-field">
                         <input type="text" size="40" required placeholder="   Имя пользователя">
                     </div>
+                    <div class="error-wrong-name" hidden>Пользователь с таким именем уже зарегистрирован</div>
                     <div class="password-title">Пароль</div>
                     <div class="password-input-field">
                         <input type="password" required size="40" placeholder="   Пароль"> 
                     </div>
                     <button class="register-button">Зарегистрироваться</button>
-                </form>
+                </div>
                 <div class="buttons">
                     <div class="buttons-separator"></div>
                     <div class="registration-info">Уже зарегистрированы? Авторизируйтесь!</div>

@@ -98,6 +98,12 @@ input::placeholder {
   color: #d0d0d0;
 }
 
+.error-wrong-email,
+.error-wrong-password {
+  color: red;
+  margin-left: 30px;
+}
+
 .password-title {
   font-family: "PT Sans", sans-serif;
   color: white;

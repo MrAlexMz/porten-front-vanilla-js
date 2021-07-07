@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8"> 
     <link rel="stylesheet" href="Login-Porten.css">
-    <script src="Login-Porten.js"></script>
     <title>Вход - Porten</title>
 </head>
 <body>
@@ -19,17 +18,19 @@
         <div class="login-input-section">
             <div class="login-box">
                 <div class="login-box-main-title">Вход</div>
-                <form>
+                <div>
                     <div class="email-title">Email</div>
                     <div class="email-input-field">
                         <input type="email" required size="40" placeholder="   Email"> 
                     </div>
+                    <div class="error-wrong-email" hidden>Неправильный email</div>
                     <div class="password-title">Пароль</div>
                     <div class="password-input-field">
                         <input type="password" required size="40" placeholder="   Пароль"> 
                     </div>
+                    <div class="error-wrong-password" hidden>Неправильный пароль</div>
                     <button class="login-button">Войти</button>
-                </form>
+                </div>
             </div>
             <div class="buttons">
                 <div class="buttons-separator"></div>
@@ -38,5 +39,6 @@
             </div>
         </div>
     </div>
+    <script src="Login-Porten.js"></script>
 </body>
 </html>
