@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("assets/fonts/style.css");
+
+.login-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-description-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  width: 35%;
+  height: 1000px;
+}
+
+.login-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-title {
+  font-family: "PT Sans", sans-serif;
+  color: white;
+  font-size: 54px;
+  margin-bottom: 20px;
+}
+
+.login-header-separator {
+  display: flex;
+  flex-shrink: 0;
+  background: white;
+  width: 1px;
+  height: 50px;
+  margin: 30px;
+}
+
+.company-name {
+  font-family: "Post No Bills Jaffna Bold";
+  font-size: 64px;
+  color: white;
+}
+
+.login-description {
+  font-family: "PT Sans", sans-serif;
+  color: white;
+  font-size: 24px;
+}
+
+.login-input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #0f0f0f;
+  width: 65%;
+  height: 1000px;
+}
+
+.login-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box-main-title {
+  font-family: "PT Sans", sans-serif;
+  color: white;
+  font-size: 44px;
+  margin-bottom: 30px;
+}
+
+.email-title,
+.user-name-title {
+  font-family: "PT Sans", sans-serif;
+  color: white;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.email-input-field input,
+.password-input-field input,
+.user-name-input-field input {
+  height: 42px;
+  width: 420px;
+  background: rgba(255, 255, 255, 0.4);
+  margin: 20px;
+}
+
+input::placeholder {
+  color: #d0d0d0;
+}
+
+.password-title {
+  font-family: "PT Sans", sans-serif;
+  color: white;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-button {
+  font-family: "PT Sans", sans-serif;
+  color: white;
+  font-size: 24px;
+  border: solid white;
+  padding: 5px;
+  margin: 20px;
+  text-decoration: none;
+}
+
+.register-button {
+  font-family: "PT Sans", sans-serif;
+  color: white;
+  font-size: 24px;
+  background-color: #0f0f0f;
+  border: solid white;
+  padding: 5px;
+  margin: 20px 120px;
+  text-decoration: none;
+}
+
+.login-button:hover,
+.register-button:hover {
+  color: rgba(255, 255, 255, 0.4);
+  border-color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+.buttons-separator {
+  border: 1px solid white;
+  width: 179px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.registration-info {
+  font-family: "PT Sans", sans-serif;
+  color: white;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
